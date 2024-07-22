@@ -3,7 +3,7 @@
     src: url("../font/Bona_Nova_SC/BonaNovaSC-Regular.ttf") ;
 }
 div{
-    align-items: flex-start;
+    background-color: blue;
 }
 
 div#titulo{
@@ -12,4 +12,23 @@ div#titulo{
     color: red;
     background-color: black ;
     text-align: center;
+}
+
+div#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+.BotaoMenu{
+    display:inline-block;
+    align-items: center;
+    width: 160px;
+    height: 25px;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 1px;
+    margin: 2px;
 }
