@@ -1,0 +1,6 @@
+       1 - OPERAÇÕES SIMPLES( +-*/ )
+        2 - CONVERSOR BASE
+        3 - CONVERSOR DE MOEDA
+        4 - BHASKARA
+        5 - GERADOR DE SENHAS
+        6 - FECHAR CALCULADORA 

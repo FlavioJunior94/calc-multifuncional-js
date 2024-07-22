@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'BonaNovaSC';
+    src: url("../font/Bona_Nova_SC/BonaNovaSC-Regular.ttf") ;
+}
+div{
+    align-items: flex-start;
+}
+
+div#titulo{
+    font-size: 2em;
+    font-family: 'BonaNovaSC';
+    color: red;
+    background-color: black ;
+    text-align: center;
+}
