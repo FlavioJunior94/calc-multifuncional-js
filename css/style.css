@@ -1,16 +1,26 @@
+:root{
+    --corfundo : #3B6EB6;
+}
 @font-face {
     font-family: 'BonaNovaSC';
     src: url("../font/Bona_Nova_SC/BonaNovaSC-Regular.ttf") ;
 }
-div{
-    background-color: blue;
+body{
+    background-color: var(--corfundo);
+}
+div#main{
+    align-items: center;
+    text-align: center;
+    background-color: var(--corfundo);
 }
 
 div#titulo{
-    font-size: 2em;
+    font-size: 2.5em;
+    height: 80px;
+    width: 100%;
     font-family: 'BonaNovaSC';
-    color: red;
-    background-color: black ;
+    color: white;
+    background: linear-gradient(to bottom, #404E61, #2371E0,var(--corfundo)) ;
     text-align: center;
 }
 
@@ -18,7 +28,7 @@ div#menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background: linear-gradient(to top, #45628B,var(--corfundo)) ; ;
 }
 
 .BotaoMenu{
@@ -26,9 +36,15 @@ div#menu{
     align-items: center;
     width: 160px;
     height: 25px;
-    background-color: white;
+    color: white;
+    background-color: #292D33;
     border-radius: 30px;
     text-align: center;
     padding: 1px;
     margin: 2px;
+}
+
+img#mascote{
+    height: 300px;
+    margin: 50px;
 }
