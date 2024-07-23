@@ -1,6 +1,8 @@
+@charset "UTF-8";
 :root{
     --corfundo : #3B6EB6;
 }
+
 @font-face {
     font-family: 'BonaNovaSC';
     src: url("../font/Bona_Nova_SC/BonaNovaSC-Regular.ttf") ;
@@ -44,7 +46,41 @@ div#menu{
     margin: 2px;
 }
 
+.BotaoMenu:hover{
+    background-color: #5d656f;
+    transition: all .3s;
+}
+
 img#mascote{
     height: 300px;
     margin: 50px;
+}
+
+div#painel{
+    display: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 300px;
+    width: 350px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 6px;
+    
+}
+
+.BotaoOp{
+    display:inline-block;
+    align-items: center;
+    width: 45px;
+    height: 18px;
+    color: white;
+    background-color: #2371E0;
+    border-radius: 30px;
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+}
+.BotaoOp:hover{
+    background-color: #92b6e9;
 }
