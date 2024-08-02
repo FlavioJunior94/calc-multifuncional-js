@@ -8,18 +8,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="main">
-        <div id="titulo">Calculadora Multifuncional</div>
-        <div id="menu">
-            <div class="BotaoMenu" onclick="operacoes()">Operações simples</div>
-            <div class="BotaoMenu" onclick="base()">Conversor de Base</div>
-            <div class="BotaoMenu" onclick=" " >Conversor de Moedas</div>
-            <div class="BotaoMenu" onclick="" >Bhaskara</div>
-            <div class="BotaoMenu"onclick="" >Gerador de Senhas</div>
-        </div>
+    <header>
+        Calculadora Multifuncional
+    </header>
+    <nav>
+        <div class="BotaoMenu" onclick="operacoes()">Operações simples</div>
+        <div class="BotaoMenu" onclick="base()">Conversor de Base</div>
+        <div class="BotaoMenu" onclick="conversor() " >Conversor de Moedas</div>
+        <div class="BotaoMenu" onclick="bhaskara()" >Bhaskara</div>
+        <div class="BotaoMenu"onclick="gerador()" >Gerador de Senhas</div>
+    </nav>
+    <main>
         <div><img src="img/mascote2.png" alt="mascote" id="mascote"></div>
         <div>Bem vindo, escolha uma das opções acima !</div>
-    </div>
+    </main>
+    <footer>
+        Desenvolvido por &#128640; <a href="https://github.com/FlavioJunior94" target="_blank">Flavio dos Santos Junior</a>.
+    </footer>
     <script src="js/links.js"></script>
 </body>
 </html>

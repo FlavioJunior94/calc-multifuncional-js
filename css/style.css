@@ -1,37 +1,62 @@
 @charset "UTF-8";
 :root{
-    --corfundo : #3B6EB6;
+    --cor01: #3B6EB6;
+    --cor02: #2371E0;
+    --cor03: #45628B;
+    --cor04: #404E61;
+    --cor05: #2D3136;
+    --cor06: #292D33;
+
+    --corBotaoapertado: #5d656f;
+    --sombra: rgba(0, 0, 0, 0.273);
+    --fontTitulo: 'BonaNovaSC';
 }
 
 @font-face {
     font-family: 'BonaNovaSC';
     src: url("../font/Bona_Nova_SC/BonaNovaSC-Regular.ttf") ;
 }
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
-    background-color: var(--corfundo);
-}
-div#main{
-    align-items: center;
-    text-align: center;
-    background-color: var(--corfundo);
+
+    background-color: var(--cor01);
+
 }
 
-div#titulo{
-    font-size: 2.5em;
-    height: 80px;
-    width: 100%;
-    font-family: 'BonaNovaSC';
-    color: white;
-    background: linear-gradient(to bottom, #404E61, #2371E0,var(--corfundo)) ;
-    text-align: center;
-}
-
-div#menu{
+nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to top, #45628B,var(--corfundo)) ; ;
+    background: linear-gradient(to top, var(--cor03),var(--cor01)) ; ;
 }
+
+
+
+header{
+    font-size: 2.5em;
+    height: 80px;
+    width: 100%;
+    font-family: var(--fontTitulo), sans-serif;
+    color: white;
+    text-shadow: 3px 2px 3px var(--sombra);
+    background: linear-gradient(to bottom, var(--cor04), var(--cor02),var(--cor01)) ;
+    text-align: center;
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor01);
+    margin-bottom: 15px;
+    text-shadow: 3px 2px 3px var(--sombra);
+}
+
+
+
 
 .BotaoMenu{
     display:inline-block;
@@ -39,21 +64,24 @@ div#menu{
     width: 160px;
     height: 25px;
     color: white;
-    background-color: #292D33;
+    background-color: var(--cor06);
     border-radius: 30px;
+    box-shadow: 2px 2px 2px var(--sombra);
     text-align: center;
     padding: 1px;
     margin: 2px;
 }
 
 .BotaoMenu:hover{
-    background-color: #5d656f;
+    background-color:var(--corBotaoapertado);
     transition: all .3s;
 }
 
 img#mascote{
     height: 300px;
-    margin: 50px;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 15px;
 }
 
 div#painel{
@@ -63,10 +91,23 @@ div#painel{
     background-color: white;
     height: 300px;
     width: 350px;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 6px;
+    margin: auto;
+    margin-top: 34px;
+    margin-bottom: 60px;
+    border-radius: 8px;
+    padding: 3px;
+    padding-top: 20px;
     
+}
+
+div#painel >p {
+    padding-top: 15px;
+}
+
+div#resultado{
+    font-size: 2.0em;
+    margin-top: 15px ;
+    color:var(--cor05)
 }
 
 .BotaoOp{
@@ -80,7 +121,28 @@ div#painel{
     text-align: center;
     padding: 3px;
     margin: 3px;
+    margin-top: 10px;
 }
 .BotaoOp:hover{
     background-color: #92b6e9;
+}
+
+footer{
+    color: white;
+    text-align: right;
+    font-size: 0.9em;
+    margin-right: 24px;
+}
+footer > a{
+    background-color: var(--cor04);
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px;
+    transition-duration: 0.1s;
+}
+footer>a:hover{
+    color: black;
+    background-color: var(--cor01);
 }
