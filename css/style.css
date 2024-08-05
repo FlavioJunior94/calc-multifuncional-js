@@ -46,6 +46,12 @@ header{
     text-align: center;
 }
 
+@media screen and (max-width: 400px) {
+    header {
+        padding-bottom: 30px;
+    }
+}
+
 main{
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
@@ -75,6 +81,15 @@ main{
 .BotaoMenu:hover{
     background-color:var(--corBotaoapertado);
     transition: all .3s;
+}
+
+@media screen and (max-width: 400px) {
+    .BotaoMenu {
+        width: 240px;
+        height: 30px;
+        padding-top: 10px;
+        font-size: 0.8em;
+    }
 }
 
 img#mascote{
