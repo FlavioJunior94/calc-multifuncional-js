@@ -10,6 +10,7 @@
     --corBotaoapertado: #5d656f;
     --sombra: rgba(0, 0, 0, 0.273);
     --fontTitulo: 'BonaNovaSC';
+
 }
 
 @font-face {
@@ -130,6 +131,21 @@ div#painel.painelCotacao > div#resultado {
     line-height: 1.6;
 }
 
+@media screen and (max-width: 600px ) {
+    div#painel.painelCotacao{
+        height: 340px;
+        width: 300px;
+        
+    }
+    
+    div#painel.painelCotacao > div#resultado {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+}
+
+
+
 div#resultado{
     font-size: 2.0em;
     margin-top: 15px ;
@@ -142,7 +158,7 @@ div#resultado{
     width: 45px;
     height: 18px;
     color: white;
-    background-color: #2371E0;
+    background-color: var(--cor02);
     border-radius: 30px;
     text-align: center;
     padding: 3px;
