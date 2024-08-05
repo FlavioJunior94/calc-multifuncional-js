@@ -119,6 +119,17 @@ div#painel >p {
     padding-top: 15px;
 }
 
+div#painel.painelCotacao{
+    height: 340px;
+    width: 420px;
+    
+}
+
+div#painel.painelCotacao > div#resultado {
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
 div#resultado{
     font-size: 2.0em;
     margin-top: 15px ;
@@ -146,6 +157,7 @@ footer{
     color: white;
     text-align: right;
     font-size: 0.9em;
+    padding-top: 50px;
     margin-right: 24px;
 }
 footer > a{

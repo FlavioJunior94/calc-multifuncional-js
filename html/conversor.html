@@ -13,17 +13,32 @@
         <div class="BotaoMenu" onclick="menu()">HOME</div>
     </nav>
     <main>
-        <div id="painel">
+        <div id="painel" class="painelCotacao">
+            <label for="bases">Selecione sua moeda: </label>
+            <select name="bases" id="moeda_bases">
+                <option value="BRL">Real</option>
+                <option value="USD">Dolar</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Libra Esterlina</option>
+            </select>
+            <p>
+                <label for="numero">Insira o Valor:</label>
+                <input type="text" id="numero" name="numero">
+                <div class="BotaoOp" onclick="moeda()" >Cotar</div>
+            </p>
+
+            <div id="resultado"></div>
                   
 
 
-        </div>   
+        </div> 
+        Obs: Use ponto (.) ao invés de virgula (,) para separar os números decimais  
     </main>
     <footer>
         Desenvolvido por &#128640; <a href="https://github.com/FlavioJunior94" target="_blank">Flavio dos Santos Junior</a>.
     </footer>
     <script src="../js/links.js"></script>
-    <script src="../js/base.js"></script>
+    <script src="../js/moeda.js"></script>
 
 </body>
 </html>
