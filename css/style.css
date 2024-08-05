@@ -134,12 +134,12 @@ div#painel.painelCotacao > div#resultado {
 @media screen and (max-width: 600px ) {
     div#painel.painelCotacao{
         height: 340px;
-        width: 300px;
+        width: 350px;
         
     }
     
     div#painel.painelCotacao > div#resultado {
-        font-size: 1em;
+        font-size: 1.1em;
         line-height: 1.6;
     }
 }
