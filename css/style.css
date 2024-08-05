@@ -46,7 +46,7 @@ header{
     text-align: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     header {
         padding-bottom: 30px;
     }
@@ -83,7 +83,7 @@ main{
     transition: all .3s;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .BotaoMenu {
         width: 240px;
         height: 30px;
