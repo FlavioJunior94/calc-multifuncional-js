@@ -29,3 +29,12 @@ function bhaskara(){
 function gerador(){
     window.location.href = links.gerador;
 }
+
+function muda_mascote(){
+    const imagem =document.getElementById("mascote");
+    if(imagem.src.includes("img/mascote2.png")){
+        imagem.src="img/mascote1.png";
+    }else{
+        imagem.src="img/mascote2.png";
+    }
+}

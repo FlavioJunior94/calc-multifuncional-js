@@ -13,17 +13,19 @@
         <div class="BotaoMenu" onclick="menu()">HOME</div>
     </nav>
     <main>
-        <div id="painel">
-                  
-
-
+        <div id="painel" class="painelGerador">
+            <p>Tamanho da sua senha:</p>
+            <p><input type="number" name="tamSenha" id="tamSenha"></p>
+            <div class="BotaoOp" onclick="gerarSenha()">Gerar</div>
+            
+            <div id="resultado"></div>
         </div>   
     </main>
     <footer>
         Desenvolvido por &#128640; <a href="https://github.com/FlavioJunior94" target="_blank">Flavio dos Santos Junior</a>.
     </footer>
     <script src="../js/links.js"></script>
-    <script src="../js/base.js"></script>
+    <script src="../js/gerador.js"></script>
 
 </body>
 </html>

@@ -131,6 +131,7 @@ div#painel.painelCotacao > div#resultado {
     line-height: 1.6;
 }
 
+
 @media screen and (max-width: 600px ) {
     div#painel.painelCotacao{
         height: 340px;
@@ -144,7 +145,31 @@ div#painel.painelCotacao > div#resultado {
     }
 }
 
+div#painel.painelGerador{
+    height: 340px;
+    width: 450px;
+    overflow-wrap: break-word;
+    
+}
 
+div#painel.painelGerador > div#resultado {
+    font-size: 1.5em;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 600px ) {
+    div#painel.painelGerador{
+        height: 380px;
+        width: 350px;
+        
+    }
+    
+    div#painel.painelGerador > div#resultado {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+}
 
 div#resultado{
     font-size: 2.0em;
@@ -167,6 +192,11 @@ div#resultado{
 }
 .BotaoOp:hover{
     background-color: #92b6e9;
+}
+
+.b2{
+    width: 100px;
+
 }
 
 footer{
