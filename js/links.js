@@ -4,7 +4,7 @@ const links ={
     base:"html/base.html",
     conversor:"html/conversor.html",
     bhaskara:"html/bhaskara.html",
-    gerador:"html/gerador.html",
+    gerador:"html/gerar.html",
 };
 
 function operacoes(){
