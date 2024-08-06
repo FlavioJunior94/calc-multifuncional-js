@@ -1,7 +1,7 @@
 function gerarSenha() {
     const tamSenha = parseInt(document.querySelector('input#tamSenha').value);
     const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+[]{}|;:,.<>?';
-    const resultado = window.document.querySelector('div#resultado');
+    const resultado = document.querySelector('div#resultado');
     let senha = '';
     
     if (isNaN(tamSenha) || tamSenha <= 0){
@@ -17,6 +17,7 @@ function gerarSenha() {
     resultado.innerHTML = `
     <p>${senha}</p>
     `
+    /*console.log(senha.length)*/
 
 }
 

@@ -7,15 +7,23 @@
     --cor05: #2D3136;
     --cor06: #292D33;
 
+    --cor02-light: #92b6e9;
+
     --corBotaoapertado: #5d656f;
     --sombra: rgba(0, 0, 0, 0.273);
     --fontTitulo: 'BonaNovaSC';
+    --fontGerador: 'Lilex';
 
 }
 
 @font-face {
     font-family: 'BonaNovaSC';
     src: url("../font/Bona_Nova_SC/BonaNovaSC-Regular.ttf") ;
+}
+
+@font-face{
+    font-family: 'Lilex';
+    src: url("../font/Lilex/Lilex-Medium.ttf") ;
 }
 *{
     margin: 0px;
@@ -129,6 +137,8 @@ div#painel.painelCotacao{
 div#painel.painelCotacao > div#resultado {
     font-size: 1.5em;
     line-height: 1.6;
+    text-align: left;
+    padding-left: 60px;
 }
 
 
@@ -146,6 +156,7 @@ div#painel.painelCotacao > div#resultado {
 }
 
 div#painel.painelGerador{
+    
     height: 340px;
     width: 450px;
     overflow-wrap: break-word;
@@ -153,6 +164,8 @@ div#painel.painelGerador{
 }
 
 div#painel.painelGerador > div#resultado {
+    font-family: var(--fontGerador) , Courier, monospace;
+    text-shadow: 0px 0px 0px var(--sombra);
     font-size: 1.5em;
     line-height: 1.6;
     overflow-wrap: break-word;
@@ -191,7 +204,7 @@ div#resultado{
     margin-top: 10px;
 }
 .BotaoOp:hover{
-    background-color: #92b6e9;
+    background-color: var(--cor02-light);
 }
 
 .b2{
@@ -218,4 +231,9 @@ footer > a{
 footer>a:hover{
     color: black;
     background-color: var(--cor01);
+}
+
+span{
+    font-size: 0.5em;
+    color: var(--cor02);
 }

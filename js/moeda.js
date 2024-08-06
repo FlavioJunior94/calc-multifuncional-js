@@ -7,10 +7,10 @@ function moeda(){
     const urlApi = `https://open.er-api.com/v6/latest/${moedaBase}`;
     const moedas = ['BRL','USD','EUR','GBP']; 
     const nome_moedas = {
-        'BRL': 'Real Brasileiro: R$',
-        'USD': 'Dólar Americano: US$',
-        'EUR': 'Euro: €',
-        'GBP': 'Libra Esterlina: £'
+        'BRL': '<span>(BRL)</span> Real Brasileiro: R$',
+        'USD': '<span>(USD)</span> Dólar Americano: US$',
+        'EUR': '<span>(EUR)</span> Euro: €',
+        'GBP': '<span>(GBP)</span> Libra Esterlina: £'
     };
 
     fetch(urlApi)
@@ -22,7 +22,7 @@ function moeda(){
                     const exchangeRate = data.rates[currency];
                     const convertedValue = (exchangeRate * numero).toFixed(2)
                     resultHtml += `
-                             (${currency}) ${nome_moedas[currency]} ${convertedValue} <br>
+                             ${nome_moedas[currency]} ${convertedValue} <br>
                         `;
                 });
                 resultado.innerHTML = resultHtml;
@@ -34,3 +34,5 @@ function moeda(){
             console.error('Erro ao obter a cotação de moeda:', error);
         });
 }
+
+//(${currency}) 

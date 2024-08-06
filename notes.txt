@@ -2,5 +2,3 @@ endereço :
 
 https://flaviojunior94.github.io/Calculadora-Multifuncional-em-JavaScript/
 
-mudei
-teste123
