@@ -5,6 +5,7 @@ const links ={
     conversor:"html/conversor.html",
     bhaskara:"html/bhaskara.html",
     gerador:"html/gerar.html",
+    imc:"html/imc.html"
 };
 
 function operacoes(){
@@ -29,6 +30,10 @@ function bhaskara(){
 function gerador(){
     window.location.href = links.gerador;
 }
+function imc(){
+    window.location.href = links.imc;
+}
+
 
 function muda_mascote(){
     const imagem =document.getElementById("mascote");

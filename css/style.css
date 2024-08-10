@@ -14,6 +14,12 @@
     --fontTitulo: 'BonaNovaSC';
     --fontGerador: 'Lilex';
 
+    --nivel1: #00e5ff;
+    --nivel2: #00ff04;
+    --nivel3: #fff200;
+    --nivel4: #ffa600;
+    --nivel5: #ff6600;
+    --nivel6: #FF0000;
 }
 
 @font-face {
@@ -55,12 +61,6 @@ header{
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    header {
-        padding-bottom: 30px;
-    }
-}
-
 main{
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
@@ -92,14 +92,6 @@ main{
     transition: all .3s;
 }
 
-@media screen and (max-width: 600px) {
-    .BotaoMenu {
-        width: 240px;
-        height: 30px;
-        padding-top: 10px;
-        font-size: 0.8em;
-    }
-}
 
 img#mascote{
     height: 300px;
@@ -125,7 +117,7 @@ div#painel{
     
 }
 
-div#painel >p {
+div#painel >p, .formImc>p{
     padding-top: 15px;
 }
 
@@ -143,19 +135,6 @@ div#painel.painelCotacao > div#resultado {
 }
 
 
-@media screen and (max-width: 600px ) {
-    div#painel.painelCotacao{
-        height: 340px;
-        width: 350px;
-        
-    }
-    
-    div#painel.painelCotacao > div#resultado {
-        font-size: 1.1em;
-        line-height: 1.6;
-    }
-}
-
 div#painel.painelGerador{
     
     height: 340px;
@@ -170,19 +149,6 @@ div#painel.painelGerador > div#resultado {
     font-size: 1.5em;
     line-height: 1.6;
     overflow-wrap: break-word;
-}
-
-@media screen and (max-width: 600px ) {
-    div#painel.painelGerador{
-        height: 380px;
-        width: 350px;
-        
-    }
-    
-    div#painel.painelGerador > div#resultado {
-        font-size: 1.1em;
-        line-height: 1.6;
-    }
 }
 
 div#resultado{
@@ -237,4 +203,76 @@ footer>a:hover{
 span{
     font-size: 0.5em;
     color: var(--cor02);
+}
+
+#mensagemImc{
+    color: white;
+    margin: auto;
+    padding: 10px;
+    margin-top: 25px;
+    height: 40px;
+    width: 200px;
+    font-size: 1.3em;
+}
+
+#mensagemImc.nivel1{
+    background-color: var(--nivel1)
+    
+}
+#mensagemImc.nivel2{
+    background-color: var(--nivel2)
+    
+}
+#mensagemImc.nivel3{
+    background-color: var(--nivel3)
+    
+}
+#mensagemImc.nivel4{
+    background-color: var(--nivel4)
+    
+}
+#mensagemImc.nivel5{
+    background-color: var(--nivel5)
+    
+}
+#mensagemImc.nivel6{
+    background-color: var(--nivel6)
+    
+}
+
+
+
+@media screen and (max-width: 600px ) {
+    header {
+        padding-bottom: 30px;
+    }
+
+    .BotaoMenu {
+        width: 240px;
+        height: 30px;
+        padding-top: 8px;
+        font-size: 0.65em;
+    }
+
+    div#painel.painelCotacao{
+        height: 340px;
+        width: 350px;
+        
+    }
+    
+    div#painel.painelCotacao > div#resultado {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    div#painel.painelGerador{
+        height: 380px;
+        width: 350px;
+        
+    }
+    
+    div#painel.painelGerador > div#resultado {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
 }
