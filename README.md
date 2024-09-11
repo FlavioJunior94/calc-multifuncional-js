@@ -37,3 +37,5 @@ Este projeto foi criado com o objetivo de aprimorar minhas habilidades em HTML, 
 Você pode acessar a página inicial do projeto através do seguinte link:
 
 [https://flaviojunior94.github.io/calc-multifuncional-js/](https://flaviojunior94.github.io/calc-multifuncional-js/)
+
+--versão 1.0
