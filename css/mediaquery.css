@@ -1,0 +1,50 @@
+@media screen and (max-width: 600px ) {
+    header {
+        padding-bottom: 30px;
+    }
+
+    nav#imenu{
+        display: none;
+    }
+
+    .BotaoMenu{
+        display:block;
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    i#burger{
+    background-color: var(--cor06);
+    color: white;
+    font-size: 1.8em;
+    display: block;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+
+    transition:  width .3s, height.3s;
+    transition-timing-function: ease;
+    }
+
+    div#painel.painelCotacao{
+        height: 340px;
+        width: 350px;
+        
+    }
+    
+    div#painel.painelCotacao > div#resultado {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    div#painel.painelGerador{
+        height: 380px;
+        width: 350px;
+        
+    }
+    
+    div#painel.painelGerador > div#resultado {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+}

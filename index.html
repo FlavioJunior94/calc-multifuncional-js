@@ -9,19 +9,23 @@
     />
     <title>Calculadora Multifuncional</title>
     <link rel="shortcut icon" href="img/calculadora.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
 </head>
 <body>
-    <header>
+    <header onresize="mudouTamanho()">
         Calculadora Multifuncional
     </header>
-    <nav>
+    <i id ="burger" class="material-icons" onclick="clickMenu()">menu</i>
+    <nav id="imenu">
         <div class="BotaoMenu" onclick="operacoes()">Operações simples</div>
         <div class="BotaoMenu" onclick="base()">Conversor de Base</div>
         <div class="BotaoMenu" onclick="conversor() " >Conversor de Moedas</div>
         <div class="BotaoMenu" onclick="bhaskara()" >Bhaskara</div>
         <div class="BotaoMenu"onclick="gerador()" >Gerador de Senhas</div>
         <div class="BotaoMenu"onclick="imc()" >IMC</div>
+        <div class="BotaoMenu"onclick="cpf()" >Validar CPF</div>
     </nav>
     <main>
         <div><img src="img/mascote2.png" alt="mascote" id="mascote" onclick="muda_mascote()"></div>
@@ -30,6 +34,7 @@
     <footer>
         Desenvolvido por &#128640; <a href="https://github.com/FlavioJunior94" target="_blank">Flavio dos Santos Junior</a>.
     </footer>
+    <script src="js/menu.js"></script>
     <script src="js/links.js"></script>
 </body>
 </html>

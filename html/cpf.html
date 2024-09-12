@@ -7,41 +7,30 @@
     name ="theme-color"
     content="#45628B"
     />
-    <title>Base</title>
+    <title>Validar CPF</title>
     <link rel="shortcut icon" href="../img/calculadora.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mediaquery.css">
 </head>
 <body>
-    <header>Base</header>
+    <header>Validar CPF</header>
     <nav>
         <div class="BotaoMenu" onclick="menu()">HOME</div>
     </nav>
     <main>
-        <div id="painel">
-                  
-            <label for="bases">Selecione sua base: </label>
-            <select name="bases" id="bases">
-                <option value="10">Decimal</option>
-                <option value="2">Binario</option>
-                <option value="16">Hexadecimal</option>
-            </select>
-
-            <p>
-                <label for="numero">Insira um número:</label>
-                <input type="text" id="numero" name="numero">
-                <div class="BotaoOp b2" onclick="converterNumero()">Converter</div>
-            </p>
+        <div id="painel" class="painelGerador">
+            <p>CPF:</p>
+            <p><input type="text" name="CPF" id="icpf"></p>
+            <div class="BotaoOp Bcpf" onclick="valCpf()">Validar</div>
             
             <div id="resultado"></div>
-
         </div>   
     </main>
     <footer>
         Desenvolvido por &#128640; <a href="https://github.com/FlavioJunior94" target="_blank">Flavio dos Santos Junior</a>.
     </footer>
     <script src="../js/links.js"></script>
-    <script src="../js/base.js"></script>
+    <script src="../js/cpf.js"></script>
 
 </body>
 </html>
