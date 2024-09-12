@@ -61,19 +61,4 @@ function valCpf(){
     }
 }
 
-//let validaCpf = new ValidaCpf('070.987.720-03');
 
-/*
-validaCpf = new ValidaCpf('999.999.999-99');
-
-console.log(validaCpf.valida());
-
-if(validaCpf.valida()){
-    console.log('CPF VALIDO');
-    
-} else{
-    console.log('CPF INVALIDO');
-    
-}
-
-*/

@@ -24,6 +24,9 @@ A Calculadora Multifuncional oferece as seguintes funcionalidades:
 6. **Gerador de Senhas:**
    - Gere senhas seguras de forma automática. Escolha o tamanho da senha e a ferramenta criará uma combinação aleatória e robusta de caracteres.
 
+6. **Validação de CPF:**
+
+   - Valide números de CPF utilizando uma abordagem baseada em Programação Orientada a Objetos (POO). A validação de CPF foi implementada com o uso de classes, onde é verificado se o CPF é válido ou uma sequência repetitiva. A função retorna o resultado da validação diretamente na interface da calculadora.
 ## Design Interativo
 
 Na página inicial (Home), você encontrará mascotes interativos criados com a ajuda da IA Copilot. Ao clicar nos mascotes, você pode alterar o design deles, adicionando uma camada divertida e personalizada à experiência do usuário.
